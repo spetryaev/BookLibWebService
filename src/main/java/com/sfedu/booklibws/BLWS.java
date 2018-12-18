@@ -5,18 +5,13 @@
  */
 package com.sfedu.booklibws;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import ru.sfedu.booklib.api.PgsqlDatabaseApi;
 import ru.sfedu.booklib.model.Book;
 import org.apache.log4j.Logger;
-import ru.sfedu.booklib.Constants;
+
 
 /**
  *
