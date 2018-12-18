@@ -23,6 +23,12 @@ public interface LogicS {
     
     @WebMethod
     public String printBookById(@WebParam (name = "bookID") int bookID);
+   
+    public void setDatabaseProps(@WebParam (name = "db_host") String db_host, 
+                                 @WebParam (name = "db_port") String db_port, 
+                                 @WebParam (name = "db_name") String db_name, 
+                                 @WebParam (name = "db_user") String db_user, 
+                                 @WebParam (name = "db_pass") String db_pass);
     
     
     }

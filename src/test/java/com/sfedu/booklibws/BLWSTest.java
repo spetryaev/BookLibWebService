@@ -46,15 +46,24 @@ public class BLWSTest {
      */
    
 
-    @Test
+    //@Test при включенном тесте данные базы будут загружены автоматически.
     public void testPrintBookById() {
-        System.out.println("printBookById");
-      
+         System.out.println("setDatabaseProps");
+        String db_host = "127.0.0.1";
+        String db_port = "5432";
+        String db_name = "db";
+        String db_user = "postgres";
+        String db_pass = "somepass";
         BLWS instance = new BLWS();
+        instance.setDatabaseProps(db_host, db_port, db_name, db_user, db_pass);
+        
+        System.out.println("printBookById");
        
         String result = instance.printBookById(66);
         System.out.print(result);
         
     }
+
+    
     
 }
