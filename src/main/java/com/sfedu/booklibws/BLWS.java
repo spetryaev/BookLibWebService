@@ -39,11 +39,11 @@ public class BLWS implements LogicS{
                                  @WebParam (name = "db_name") String db_name, 
                                  @WebParam (name = "db_user") String db_user, 
                                  @WebParam (name = "db_pass") String db_pass) {
-        BLWS.db_host = db_host;
-        BLWS.db_port = db_port;
-        BLWS.db_name = db_name;
-        BLWS.db_user = db_user;
-        BLWS.db_pass = db_pass;
+        this.db_host = db_host;
+        this.db_port = db_port;
+        this.db_name = db_name;
+        this.db_user = db_user;
+        this.db_pass = db_pass;
     }
     
     
